@@ -1,0 +1,72 @@
+PODS:
+  - Alamofire (5.5.0)
+  - CWLog (1.0.4)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManagerSwift (6.5.9)
+  - JXSegmentedView (1.2.7)
+  - Kingfisher (6.3.1)
+  - MBProgressHUD (1.2.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Reachability (3.2)
+  - Result (5.0.0)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - CWLog
+  - HandyJSON
+  - IQKeyboardManagerSwift
+  - JXSegmentedView (~> 1.2.7)
+  - Kingfisher
+  - MBProgressHUD
+  - Moya
+  - Reachability (~> 3.2)
+  - Result
+  - SDCycleScrollView
+  - SnapKit (~> 4.2.0)
+  - SwiftyJSON (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CWLog
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - JXSegmentedView
+    - Kingfisher
+    - MBProgressHUD
+    - Moya
+    - Reachability
+    - Result
+    - SDCycleScrollView
+    - SDWebImage
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CWLog: 3cbbe6b7fb51cd120c8ae8fce7e911341468e790
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: c26eb973ee5ffab961688df1624f7f8746ac053e
+
+COCOAPODS: 1.11.2
