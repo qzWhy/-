@@ -90,6 +90,11 @@
 		1BE614FF2817C6BF009A367B /* ComicDetailImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE614F92817C6BF009A367B /* ComicDetailImgCell.swift */; };
 		1BE615002817C6BF009A367B /* ChapterNumbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE614FA2817C6BF009A367B /* ChapterNumbCell.swift */; };
 		1BE615012817C6BF009A367B /* ComicReadTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE614FB2817C6BF009A367B /* ComicReadTopBar.swift */; };
+		1BE615132817E59E009A367B /* gifSimulator-Screen-Recording-iPhone-13-Pro-Max-2022-04-22-at-17.23.51.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6150E2817E59C009A367B /* gifSimulator-Screen-Recording-iPhone-13-Pro-Max-2022-04-22-at-17.23.51.gif */; };
+		1BE615142817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 18.00.02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6150F2817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 18.00.02.png */; };
+		1BE615152817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.44.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE615102817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.44.png */; };
+		1BE615162817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.24.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE615112817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.24.png */; };
+		1BE615172817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.34.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE615122817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.34.png */; };
 		1BFDA5092808FD9A00E1F64A /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA5082808FD9A00E1F64A /* ComicViewController.swift */; };
 		1BFDA50B2809405000E1F64A /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA50A2809405000E1F64A /* ComicModel.swift */; };
 		1BFDA50E28094C8F00E1F64A /* ComicUIType1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA50D28094C8F00E1F64A /* ComicUIType1Cell.swift */; };
@@ -190,6 +195,11 @@
 		1BE614F92817C6BF009A367B /* ComicDetailImgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDetailImgCell.swift; sourceTree = "<group>"; };
 		1BE614FA2817C6BF009A367B /* ChapterNumbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterNumbCell.swift; sourceTree = "<group>"; };
 		1BE614FB2817C6BF009A367B /* ComicReadTopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicReadTopBar.swift; sourceTree = "<group>"; };
+		1BE6150E2817E59C009A367B /* gifSimulator-Screen-Recording-iPhone-13-Pro-Max-2022-04-22-at-17.23.51.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gifSimulator-Screen-Recording-iPhone-13-Pro-Max-2022-04-22-at-17.23.51.gif"; sourceTree = "<group>"; };
+		1BE6150F2817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 18.00.02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 18.00.02.png"; sourceTree = "<group>"; };
+		1BE615102817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.44.png"; sourceTree = "<group>"; };
+		1BE615112817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.24.png"; sourceTree = "<group>"; };
+		1BE615122817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.34.png"; sourceTree = "<group>"; };
 		1BFDA5082808FD9A00E1F64A /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 		1BFDA50A2809405000E1F64A /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
 		1BFDA50D28094C8F00E1F64A /* ComicUIType1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicUIType1Cell.swift; sourceTree = "<group>"; };
@@ -240,6 +250,7 @@
 		1B70634F2807AED20019B19A /* U17_comic */ = {
 			isa = PBXGroup;
 			children = (
+				1BE6150D2817E4CB009A367B /* ScreenShot */,
 				1B7063C52807B5C90019B19A /* Net */,
 				1B7063B42807B4740019B19A /* obj */,
 				1B7063752807B36B0019B19A /* Const */,
@@ -626,6 +637,18 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		1BE6150D2817E4CB009A367B /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				1BE6150E2817E59C009A367B /* gifSimulator-Screen-Recording-iPhone-13-Pro-Max-2022-04-22-at-17.23.51.gif */,
+				1BE615112817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.24.png */,
+				1BE615122817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.34.png */,
+				1BE615102817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.44.png */,
+				1BE6150F2817E59D009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 18.00.02.png */,
+			);
+			path = ScreenShot;
+			sourceTree = "<group>";
+		};
 		1BFDA50C28094BDB00E1F64A /* Comic */ = {
 			isa = PBXGroup;
 			children = (
@@ -706,8 +729,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE615172817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.34.png in Resources */,
+				1BE615152817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.44.png in Resources */,
 				1B70635D2807AED70019B19A /* LaunchScreen.storyboard in Resources */,
+				1BE615132817E59E009A367B /* gifSimulator-Screen-Recording-iPhone-13-Pro-Max-2022-04-22-at-17.23.51.gif in Resources */,
 				1B70635A2807AED70019B19A /* Assets.xcassets in Resources */,
+				1BE615162817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 17.59.24.png in Resources */,
+				1BE615142817E59E009A367B /* imgSimulator Screen Shot - iPhone 13 Pro Max - 2022-04-22 at 18.00.02.png in Resources */,
 				1B7063652807B0810019B19A /* README.md in Resources */,
 				1B7063582807AED20019B19A /* Main.storyboard in Resources */,
 			);
