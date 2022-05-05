@@ -10,14 +10,14 @@ import UIKit
 
 class QZBaseTabBarViewController: UITabBarController {
 
-    var customTabBar1 = UNTabBar()
+    var customTabBar1 = QZTabBar()
     
     @objc static let shared = QZBaseTabBarViewController.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let customTabBar = UNTabBar()
+        let customTabBar = QZTabBar()
         //取消tabBar的透明效果
         customTabBar.isTranslucent = true
         //设置tabBar的代理
@@ -43,15 +43,15 @@ class QZBaseTabBarViewController: UITabBarController {
     func setupTabBar() {
         let homevc = HomeViewController()
         let minevc = MineViewController()
-        let publishvc = PublishViewController()
+//        let publishvc = PublishViewController()
         let liftvc = LifeViewController()
         let topicvc = BookSheetController()
         
-        creatTabBarView(viewController: homevc, image: "home_normal", selectImage: "home_highlight", title: "发现", tag: 1)
-        creatTabBarView(viewController: topicvc, image: "familiarity_car_normal", selectImage: "familiarity_car_highlight", title: "书架", tag: 2)
-        creatTabBarView(viewController: publishvc, image: "transparent", selectImage: "", title: "发布", tag: 3)
-        creatTabBarView(viewController: liftvc, image: "order_normal", selectImage: "order_highlight", title: "生活", tag: 4)
-        creatTabBarView(viewController: minevc, image: "mine_icon", selectImage: "mine_icon_highlight", title: "我的", tag: 5)
+        creatTabBarView(viewController: topicvc, image: "tab_book_103x54_", selectImage: "tab_book_selected_103x54_", title: "", tag: 2)
+        creatTabBarView(viewController: liftvc, image: "tab_today_103x54_", selectImage: "tab_today_selected_103x54_", title: "", tag: 1)
+//        creatTabBarView(viewController: publishvc, image: "transparent", selectImage: "", title: "发布", tag: 3)
+        creatTabBarView(viewController: homevc, image: "tab_find_103x54_", selectImage: "tab_find_selected_103x54_", title: "", tag: 4)
+        creatTabBarView(viewController: minevc, image: "tab_mine_103x54_", selectImage: "tab_mine_selected_103x54_", title: "", tag: 5)
         
 //        self.tabBar.tintColor = UIColor.colorWithRGBHex(hex: 0x000E18)
         self.tabBar.isTranslucent = true
@@ -59,7 +59,7 @@ class QZBaseTabBarViewController: UITabBarController {
         self.viewControllers = [
             QZNavigationController(rootViewController: liftvc),
             QZNavigationController.init(rootViewController: homevc),
-            QZNavigationController(rootViewController: publishvc),
+//            QZNavigationController(rootViewController: publishvc),
             QZNavigationController(rootViewController: topicvc),
             QZNavigationController(rootViewController: minevc),
             
@@ -95,13 +95,13 @@ class QZBaseTabBarViewController: UITabBarController {
 
 extension QZBaseTabBarViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if viewController == viewControllers![2] {
-           let vc = PublishViewController()
-            let nav = BaseNavigationController(rootViewController: vc)
-            nav.modalPresentationStyle = .fullScreen
-            viewController.present(nav, animated: true, completion: nil)
-            return false
-        }
+//        if viewController == viewControllers![2] {
+//           let vc = PublishViewController()
+//            let nav = BaseNavigationController(rootViewController: vc)
+//            nav.modalPresentationStyle = .fullScreen
+//            viewController.present(nav, animated: true, completion: nil)
+//            return false
+//        }
         
         return true
     }

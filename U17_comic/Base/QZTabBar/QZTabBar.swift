@@ -51,7 +51,8 @@ class QZTabBar: UITabBar {
     
     lazy var bgimgView:UIImageView = {
         let imageView = UIImageView(frame: self.bounds)
-        imageView.image = UIImage(named: "tabbar_bg")
+//        imageView.image = UIImage(named: "tabbar_bg")
+        imageView.image = UIImage.imageWithColor(color: UIColor.white)
         return imageView
     }()
 
@@ -66,7 +67,7 @@ class QZTabBar: UITabBar {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(bgimgView)
-        self.addSubview(self.plusButton)
+//        self.addSubview(self.plusButton)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -92,13 +93,13 @@ class QZTabBar: UITabBar {
         
         
         //设置中间的按钮的位置
-        let x = self.frame.width * 0.5
-        let y = self.frame.height * 0.2
-        self.plusButton.center = CGPoint(x: x, y: y)
+//        let x = self.frame.width * 0.5
+//        let y = self.frame.height * 0.2
+//        self.plusButton.center = CGPoint(x: x, y: y)
 //        self.plusButton.z_centerX = x
 //        self.plusButton.z_centerY =
         self.bgimgView.frame = self.bounds
-        let w = self.frame.width / 5
+        let w = self.frame.width / 4
         var index = 0
         for childView: UIView in self.subviews {
             if childView.isKind(of: NSClassFromString("UITabBarButton")!) {
@@ -111,9 +112,9 @@ class QZTabBar: UITabBar {
                 
                 index+=1
                 
-                if index == 2 {
-                    index+=1
-                }
+//                if index == 2 {
+//                    index+=1
+//                }
             }
         }
     }

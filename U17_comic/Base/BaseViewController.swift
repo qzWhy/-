@@ -137,6 +137,16 @@ extension BaseViewController : UITableViewDelegate, UITableViewDataSource {
             cell.backgroundView = roundView
             
         }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let offsetY = scrollView.contentOffset.y
+        let parma = [
+            "offsetY" : offsetY
+        ]
+        
+        NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: "OFFSETY"), object: nil, userInfo: parma)
+    }
 }
 
 extension BaseViewController: JXSegmentedListContainerViewListDelegate {

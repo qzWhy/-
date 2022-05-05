@@ -11,6 +11,12 @@ import CWLog
 
 class HomeViewController: UIViewController {
     
+    var isNormalStatus: Bool = true {
+        didSet {
+            
+        }
+    }
+    
     lazy var listContainerView: JXSegmentedListContainerView! = {
         return JXSegmentedListContainerView(dataSource: self)
     }()
@@ -37,7 +43,7 @@ class HomeViewController: UIViewController {
         dataSource.titleSelectedZoomScale = 1.3
         dataSource.isTitleStrokeWidthEnabled = true
         dataSource.titleSelectedFont = UIFont.boldSystemFont(ofSize: 30)
-        dataSource.titleSelectedColor = titleColor
+        dataSource.titleSelectedColor = .white
         dataSource.titleNormalFont = UIFont.systemFont(ofSize: 20)
         dataSource.titleNormalColor = .white
         dataSource.isTitleColorGradientEnabled = true
@@ -81,11 +87,39 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        qz_tintColor = .red
+        view.backgroundColor = .white
         qz_barAlpha = 0
         
         loadData()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(contentOffsetchange(noti:)), name: Notification.Name.init(rawValue: "OFFSETY"), object: nil)
     }
     
+    @objc func contentOffsetchange(noti: Notification) {
+        if let userinfo = noti.userInfo {
+            let offsetY = userinfo["offsetY"] as! CGFloat
+            qz_barAlpha = offsetY/64
+            if offsetY/64 > 0.5 {
+                if isNormalStatus {
+                    if let titleDataSource = segmentedDataSource as? JXSegmentedDotDataSource {
+                        titleDataSource.titleNormalColor = titleColor
+                        titleDataSource.titleSelectedColor = titleColor
+                    }
+                }
+                isNormalStatus = false
+            } else {
+                if !isNormalStatus {
+                    if let titleDataSource = segmentedDataSource as? JXSegmentedDotDataSource {
+                        
+                        titleDataSource.titleNormalColor = .white
+                        titleDataSource.titleSelectedColor = .white
+                    }
+                }
+                isNormalStatus = true
+            }
+            segmentedView.reloadDataWithoutListContainer()
+        }
+    }
     func sericalQueue() {
         
         let item1 = DispatchWorkItem {
