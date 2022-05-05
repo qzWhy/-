@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
         dataSource.titleSelectedFont = UIFont.boldSystemFont(ofSize: 30)
         dataSource.titleSelectedColor = titleColor
         dataSource.titleNormalFont = UIFont.systemFont(ofSize: 20)
-        dataSource.titleNormalColor = FA3Color
+        dataSource.titleNormalColor = .white
         dataSource.isTitleColorGradientEnabled = true
         dataSource.isItemSpacingAverageEnabled = false
         let indicator = JXSegmentedIndicatorGradientLineView()
